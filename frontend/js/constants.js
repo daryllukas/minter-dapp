@@ -1,4 +1,4 @@
-const contractAddress = "0x713A41404D1065c7DF377Ac8A2026e16376E66e4"; //Replace with your own contract address
+const contractAddress = "0x7dCde30E4d1ab2b8b2027A0078b0FdAdF56C2e82"; //Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the CeedVerse NFT Project!!";
