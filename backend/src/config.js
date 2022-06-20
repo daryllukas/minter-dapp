@@ -49,7 +49,7 @@ const LIMIT = 3; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'ceedverse_avatar_contract';
+const CONTRACT_NAME = 'ceedverse_avatar';
 const CONTRACT_SYMBOL = 'CEED';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x9a63106465bf0D9Bf675fcd52FD7cEEc3F079342';
@@ -67,7 +67,7 @@ const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the ro
 const ROYALTY_ADDRESS = "0x9a63106465bf0D9Bf675fcd52FD7cEEc3F079342"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ["0x9a63106465bf0D9Bf675fcd52FD7cEEc3F079342"]; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = ["0xF5f86cA99A4E294202F9E13dE6b6228661edCe40"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
