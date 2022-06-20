@@ -339,6 +339,11 @@ const abi = [
               },
               {
                 internalType: "uint256",
+                name: "totalSupply",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
                 name: "mintPrice",
                 type: "uint256",
               },
