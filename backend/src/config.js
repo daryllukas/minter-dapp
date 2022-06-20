@@ -53,9 +53,9 @@ const CONTRACT_NAME = 'ceedverse_avatar';
 const CONTRACT_SYMBOL = 'CEED';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x9a63106465bf0D9Bf675fcd52FD7cEEc3F079342';
-const TREASURY_ADDRESS = '0x9a63106465bf0D9Bf675fcd52FD7cEEc3F079342';
+const TREASURY_ADDRESS = '0xF5f86cA99A4E294202F9E13dE6b6228661edCe40';
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
