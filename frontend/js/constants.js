@@ -3,7 +3,7 @@ const chain = 'rinkeby'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the CeedVerse NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'Introducing AOA Age of Annihilation, the story of a near-future, global apocalypse where #Afrofuturist innovation & #cannabis combine to save the world as we know it.<br />Can the elite Nacirfaz warriors from this planet harness the physical & metaphysical power of cannabis to unlock the plant\'s extraordinary capabilities and offer hope for the humanity of planet Ion?⁠<br/>⁠Learn more and join the mission! <a href="https://youtube.com/codestackr"  target="_blank" rel="noopener noreferrer">Enter the CEEDVERSE!</a>.';
+const welcome_p = 'Introducing AOA Age of Annihilation, the story of a near-future, global apocalypse where #Afrofuturist innovation & #cannabis combine to save the world as we know it.<br />Can the elite Nacirfaz warriors from this planet harness the physical & metaphysical power of cannabis to unlock the plant\'s extraordinary capabilities and offer hope for the humanity of planet Ion?⁠<br/>⁠Learn more and join the mission! <br/> <br/> <a href="https://youtube.com/codestackr"  target="_blank" rel="noopener noreferrer">Enter the CEEDVERSE!</a>.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
