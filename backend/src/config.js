@@ -7,22 +7,99 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
+const namePrefix = "ceedverse.nft";
+const description = "Written by Tre'Von Dorsey and illustrated by Chileshe Tembo, the Age of Annihilation (AoA) graphic novel begins in the year 2066, where global warming is the most pressing matter, government and technology have become one, and the melanated populous has annihilated their oppression.";
+const baseUri = "ipfs://QmcR3Q399HUprY4xEEhkH5VqnPfmPvAPhSda9e4aTWD7QM"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Hesu Suit" },
+      { name: "Hesu Shoulder Pads" },
+      { name: "Hesu Hair" },
+      { name: "Hesu Head Band" },
+      { name: "Hesu Neck Piece" },
+      { name: "Hesu Eyes" },
+      { name: "Hesu Earrings" },
+    ],
+  },
+  {
+    growEditionSizeTo: 200,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Bao Suit" },
+      { name: "Bao Armour" },
+      { name: "Bao Face Paint" },
+      { name: "Bao Hair" },
+      { name: "Bao Beard" },
+      { name: "Bao Eyes" },
+    ],
+  },
+  {
+    growEditionSizeTo: 300,
+    layersOrder: [
+      { name: "Background" },
+      { name: "DaCala Suit" },
+      { name: "DaCala Shoulder Pads" },
+      { name: "DaCala Face Paint" },
+      { name: "DaCala Hair" },
+      { name: "DaCala Earrings" },
+      { name: "DaCala Eyes" },
+      { name: "DaCala Blade" },
+    ],
+  },
+  {
+    growEditionSizeTo: 400,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Agga Suit" },
+      { name: "Agga Shoulder Pads" },
+      { name: "Agga Head Piece" },
+      { name: "Agga Neck Piece" },
+      { name: "Agga Eyes" },
+      { name: "Agga Face Paint" },
+      { name: "Agga Nose Rings" },
+    ],
+  },
+  {
+    growEditionSizeTo: 500,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Indi Suit" },
+      { name: "Indi Armour" },
+      { name: "Indi Face Paint" },
+      { name: "Indi Hair" },
+      { name: "Indi Eyes" },
+    ],
+  },
+  {
+    growEditionSizeTo: 600,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Rezen Suit" },
+      { name: "Rezen Shoulder Pads" },
+      { name: "Rezen Face Paint" },
+      { name: "Rezen Hair" },
+      { name: "Rezen Blade" },
+      { name: "Rezen Eyes" },
+      { name: "Rezen Beard" },
+    ],
+  },
+  {
+    growEditionSizeTo: 700,
+    layersOrder: [
+      { name: "Background" },
+      { name: "ZKif Suit" },
+      { name: "ZKif Shoulder Pads" },
+      { name: "ZKif Face Paint" },
+      { name: "ZKif Hair" },
+      { name: "ZKif Neck Piece" },
+      { name: "ZKif Eyes" },
+      { name: "ZKif Arm Bands" },
+      { name: "ZKif Beard" },
     ],
   },
 ];
@@ -32,8 +109,8 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 3000,
+  height: 3000,
   smoothing: false,
 };
 
@@ -49,20 +126,20 @@ const LIMIT = 3; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'ceedverse_avatar';
+const CONTRACT_NAME = 'ceedverse';
 const CONTRACT_SYMBOL = 'CEED';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x9a63106465bf0D9Bf675fcd52FD7cEEc3F079342';
-const TREASURY_ADDRESS = '0xF5f86cA99A4E294202F9E13dE6b6228661edCe40';
+const TREASURY_ADDRESS = '0x9a63106465bf0D9Bf675fcd52FD7cEEc3F079342';
 const MAX_SUPPLY = 700; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 5; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 700; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-06-20T15:00:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-06-21T15:00:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-06-20T14:45:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-06-21T14:45:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x9a63106465bf0D9Bf675fcd52FD7cEEc3F079342"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
@@ -73,7 +150,7 @@ const PRESALE_WHITELISTED_ADDRESSES = ["0xF5f86cA99A4E294202F9E13dE6b6228661edCe
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
-const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
+const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = "Which Ceedverse Avatar Variation will you get?"; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
