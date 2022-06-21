@@ -1,4 +1,4 @@
-const contractAddress = "0x95030F2B6F0B2472b41a9D6B3C783033f8911333"; //Replace with your own contract address
+const contractAddress = "0x91a59Dfdc36402E41bD2Fe2266d9fC1AB2369d29"; //Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the CeedVerse NFT Project!!";
@@ -335,11 +335,6 @@ const abi = [
               {
                 internalType: "uint256",
                 name: "maxSupply",
-                type: "uint256",
-              },
-              {
-                internalType: "uint256",
-                name: "totalSupply",
                 type: "uint256",
               },
               {
